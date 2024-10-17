@@ -294,6 +294,18 @@ main .cards .card .actions {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    main .designs .headline{
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .headline .mid {
+        text-align: left;
+    }
+    main .headline .left {
+        grid-column: 1 /3;
+    }
+}
 
 @media screen and (max-width: 800px) {
     main .landing .content {
@@ -310,11 +322,20 @@ main .cards .card .actions {
     header .account button {
         font-size: 14px;
     }
-}
-
-
-@media screen and (max-width: 500px) {
-    header .account .sign-up {
-        display: none;
+    
+    main .designs .headline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main .headline .mid {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+    main .headline .left {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+    main .headline .right {
+        grid-column: 1 / 3;
+        text-align: center;
     }
 }

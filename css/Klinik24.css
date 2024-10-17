@@ -202,6 +202,10 @@ main .services .special-service * {
     text-align: center;
 }
 
+main .services .special-service > img {
+    width: 100%;
+}
+
 main .services .special-service h2 {
     font-size: 32px;
     margin-top: 32px;
@@ -230,8 +234,6 @@ main .appointment {
     color: white;
 }
 
-main .appointment h1 {
-}
 main .appointment p {
     width: 60%;
     
@@ -367,6 +369,12 @@ footer .row {
     opacity: 0.7;
   }
 
+@media screen and (max-width: 1065px){
+    .reverse .content {
+        grid-area: 2;
+    }
+}
+
 @media (max-width: 1000px) {
     header .content .account {
         display: none;
@@ -425,6 +433,10 @@ footer .row {
         width: 80%;
         padding: 16px;
     }
+    main .services .headline {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 }
 
 
@@ -441,5 +453,13 @@ footer .row {
     }
     header .account button {
         font-size: 14px;
+    }
+
+    main .appointment div {
+        flex-direction: column;
+    }
+    .comments .cards,
+    main .services .special-service {
+        grid-template-columns: 1fr;
     }
 }
