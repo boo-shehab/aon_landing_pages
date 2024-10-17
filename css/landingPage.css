@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #14203E;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 6px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+header {
+    border-bottom: 1px solid #F4E8D8;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 99px;
+    padding: 0px 45px;
+}
+
+header .content nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+header .content .menu {
+    display: none;
+}
+
+.login {
+    background-color: #F6F0E8;
+    color: white;
+}
+
+main .landing {
+    background-color: #FFFCF8;
+}
+
+main .landing .content {
+    height: 80vh;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+main .landing h1 {
+    font-size: 66px;
+    font-weight: bold;
+    color: #14203E;
+}
+
+main .landing p {
+    font-size: 22px;
+}
+main img {
+    width: 100%;
+}
+main .landing button {
+    padding: 20px 40px;
+}
+main .designs .headline {
+    position: relative;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+main .designs .headline div {
+    width: 50%;
+    height: 1px;
+    margin: auto;
+    background-color: #14203E;
+}
+
+main .designs .headline p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+main .designs .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 1000px) {
+    header .content nav,
+    header .content > .account  {
+        display: none;
+    }
+
+    header .content .menu {
+        display: block;
+        position: relative;
+    }
+
+    header .content .menu {
+        padding: 10px 15px;
+    }
+
+    header .content .menu > div {
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+        justify-content: space-around;
+    }
+    header .content .menu div span {
+        width: 20px;
+        height: 1px;
+        background-color: white;
+
+    }
+    header .content .menu:hover nav{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        background: #FFFCF8;
+        transform: translate(0%, 0%);
+        padding: 10px;
+        flex-direction: column;
+        gap: 15px;
+        border: 1px solid #F4E8D8;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        width: 300px;
+    }
+    header .content .menu nav a {
+        margin: 10px;
+    }
+    main .landing .content {
+        width: 80%;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .landing .content {
+        width: 100%;
+        padding: 16px;
+    }
+    main .landing h1 {
+        font-size: 40px;
+    }
+    main .landing p {
+        font-size: 18px;
+    }
+
+    header .account button {
+        font-size: 14px;
+    }
+}
