@@ -441,6 +441,9 @@ footer .row {
 
 
 @media screen and (max-width: 800px) {
+    .partners .images img {
+        width: 100%;
+    }
     main .landing .content {
         width: 100%;
         padding: 16px;
